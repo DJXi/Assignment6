@@ -1,1 +1,12 @@
 
+Write up for assignment 6 from Ricardo(Dingjie) Xi
+
+(1). Operation to count: if (java.lang.Math.abs(dubs[i] - d) < eps) {
+                            return true;
+                          } 
+     Input of model:double[] dubs
+     Worst Case Scenario: There is no such element in the array or such element is in the last of the array,
+                          then the program needs to traverse the whole array
+     model T: T(n) = 1 + T(n-1)
+     Big O notation: T(n), where c = 1, x0 = 1.
+(2). 
