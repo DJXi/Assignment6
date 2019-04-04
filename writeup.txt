@@ -57,3 +57,4 @@ Write up for assignment 6 from Ricardo(Dingjie) Xi
     Space complexity: O(n)
     It is O(n) because we create a new array with length (arr1.length + arr2.length).
     And we can conclude that if we know the time complexity bound, the space complexity must be bounded to that.
+    However, if we know the space complexity, we are not sure about the time complexity.
