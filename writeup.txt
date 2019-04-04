@@ -39,4 +39,21 @@ Write up for assignment 6 from Ricardo(Dingjie) Xi
      This is because the loop will totoally access the arr by the square of the length of the array times.
      If concatenation of strings of length n and length m takes O(n+m), the the time complexity greatly depend on the length of string        we concatenate first. The time complexity would be roughly O(n^4/2).(But it will be smaller during runtime)
      
-(5). 
+(5).     
+    Operation to count:
+    while ((i < length1) && (j < length2)) {
+      arr[i + j] = arr1[i++];
+      arr[i + j] = arr2[j++];
+    } // while
+    while (i < length1) {
+      arr[i + j] = arr1[i++];
+    } // while
+    while (j < length2) {
+      arr[i + j] = arr2[j++];
+    } // while
+    Input of model:int[] arr1, int[] arr2
+    Big O notation: O(n), where c = 1/2, x0 = 1.
+    It is O(n) because in the end, the loop will go exactly arr1.length + arr2.length times.
+    Space complexity: O(n)
+    It is O(n) because we create a new array with length (arr1.length + arr2.length).
+    And we can conclude that if we know the time complexity bound, the space complexity must be bounded to that.
