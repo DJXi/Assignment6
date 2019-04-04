@@ -2,7 +2,7 @@ package assignment6;
 
 public class FastModExp {
 
-  public static int fastModExp(int x, int y, int m) {
+  public int fastModExp(int x, int y, int m) {
     if (y == 1) {
       return x % m;
     } else if ((y % 2) == 0) {
