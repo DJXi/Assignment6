@@ -7,7 +7,7 @@ Write up for assignment 6 from Ricardo(Dingjie) Xi
      Input of model:double[] dubs
      Worst Case Scenario: There is no such element in the array or such element is in the last of the array,
                           then the program needs to traverse the whole array
-     model T: T(n) = 1 + T(n-1)
+     model T: T(n) = n
      Big O notation: O(n), where c = 1, x0 = 1.
      
 (2). Operation to count:     if (y == 1) {
@@ -30,8 +30,8 @@ Write up for assignment 6 from Ricardo(Dingjie) Xi
      
 (3). Operation to count:   ret[i] = new IntPair(arr[i / 3], arr[i % 3]);
      Input of model: int[] arr
-     model T: T(n^2) = 2 + T(n^2-1)
-     Big O notation: O(n^2), where c = 1/2, x0 = 1.
+     model T: T(n) = 3*n*n
+     Big O notation: O(n^2), where c = 3, x0 = 1.
 
 (4). Operation to count: str += arr[i / length];
      Input of model:String[] arr
@@ -52,7 +52,7 @@ Write up for assignment 6 from Ricardo(Dingjie) Xi
       arr[i + j] = arr2[j++];
     } // while
     Input of model:int[] arr1, int[] arr2
-    Big O notation: O(n), where c = 1/2, x0 = 1.
+    Big O notation: O(n), where c = 4, x0 = 2.
     It is O(n) because in the end, the loop will go exactly arr1.length + arr2.length times.
     Space complexity: O(n)
     It is O(n) because we create a new array with length (arr1.length + arr2.length).
