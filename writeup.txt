@@ -20,8 +20,9 @@ Write up for assignment 6 from Ricardo(Dingjie) Xi
                                    .
                                    .
                                    .
-                          T(1) = 1
-                          T(n) = logn(log with a base 2)
+                          T(1) = 1 + T(0)
+                          T(0) = 1
+                          T(n) = logn + 1(log with a base 2)
      Big O notation: O(logn), where c = 1, x0 = 1.  
      
 (3). Operation to count:   ret[i] = new IntPair(arr[i / 3], arr[i % 3]);
