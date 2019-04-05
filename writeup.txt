@@ -10,13 +10,9 @@ Write up for assignment 6 from Ricardo(Dingjie) Xi
      model T: T(n) = n
      Big O notation: O(n), where c = 1, x0 = 1.
      
-(2). Operation to count:     if (y == 1) {
-                               return x % m;
-                             } else if ((y % 2) == 0) {
+(2). Operation to count:       return x % m;                            
                                return FastModExp.fastModExp(x * x % m, y / 2, m);
-                             } else {
                                return ((x * FastModExp.fastModExp(x, y - 1, m)) % m);
-                             }
      Recurrence Relation: T(n) =  1 + T(n/2)
                           T(n/2) = 1 + T(n/4)
                                    .
